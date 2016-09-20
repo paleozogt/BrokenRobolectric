@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="pseudo_logcat" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%.-1level/%logger{23}: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="TRACE">
+        <appender-ref ref="pseudo_logcat" />
+    </root>
+</configuration>
